@@ -136,8 +136,8 @@ function new_settings(){
 	name_el.removeAttribute("disabled");
 	name_el.value = "";
 	
-	var endpoint_el = document.getElementById("endpoint");
-	endpoint_el.value = "https://whosonfirst-api.mapzen.com";
+	// var endpoint_el = document.getElementById("endpoint");
+	// endpoint_el.value = "https://whosonfirst-api.mapzen.com";
 	
 	var key_el = document.getElementById("api_key");
 	key_el.value = "";
@@ -219,8 +219,8 @@ function reload_settings(){
 		var endpoint_el = document.getElementById("endpoint");
 		var name_el = document.getElementById("name");
 		
-		endpoint_el.value = "https://whosonfirst-api.mapzen.com";
-		name_el.value = "default";
+		// endpoint_el.value = "https://whosonfirst-api.mapzen.com";
+		// name_el.value = "default";
 
 		select.style.display = "none";		
 	}
