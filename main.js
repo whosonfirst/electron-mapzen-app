@@ -16,7 +16,7 @@ let settingsWindow
 
 function createMainWindow () {
 
-	mainWindow = new BrowserWindow({width: 1024, height: 600})
+	mainWindow = new BrowserWindow({width: 1024, height: 800})
 	
 	mainWindow.loadURL(url.format({
 		pathname: path.join(__dirname, 'index.html'),
@@ -38,7 +38,7 @@ function createSettingsWindow () {
 		return;
 	}
 	
-	settingsWindow = new BrowserWindow({width: 1024, height: 600})
+	settingsWindow = new BrowserWindow({width: 1024, height: 800})
 	
 	settingsWindow.loadURL(url.format({
 		pathname: path.join(__dirname, 'settings.html'),

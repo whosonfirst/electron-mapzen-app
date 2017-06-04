@@ -84,22 +84,25 @@ function set_current_config(){
 	var el = document.getElementById("show-settings");
 	var config = get_config();
 
-	var key = "";
-	var ep = "";
-				
 	if (config){
 				
-		key = config.api_key;
-		ep = config.endpoint;
+		var key = config.api_key;
+		var ep = config.endpoint;
 		
 		el.setAttribute("data-config-name", config.name);
 		remove_class(el, "warning");
+
+		document.body.setAttribute("data-api-endpoint", ep);
+		document.body.setAttribute("data-api-key", key);		
 	}
 
 	else {
 		
 		el.setAttribute("data-config-name", "");					
 		append_class(el, "warning");
+
+		document.body.removeAttribute("data-api-endpoint");
+		document.body.removeAttribute("data-api-key");				
 	}
 	
 }
