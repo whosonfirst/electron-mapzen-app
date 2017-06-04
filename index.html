@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Mapzen API Application</title>
+
+    <link rel="stylesheet" type="text/css" href="css/mapzen.styleguide.css" />
+  </head>
+  <body>
+
+    <div class="row" id="header" style="border:solid thin;">
+      
+      <div class="col-md-12">
+	<div id="network-status" class="online"></div>
+
+	<ul class="list-inline">
+	    <li><button id="show-settings" class="btn btn-default btn-sm">settings</button></li>	  
+	</ul>
+      </div>
+      
+   </div>
+
+   <div class="row" id="body">
+	
+     <div class="col-md-12">
+       <div id="main"></div>
+     </div>
+
+  </div>
+
+  </body>
+
+  <script>
+    require('./renderer.js');
+  </script>
+</html>

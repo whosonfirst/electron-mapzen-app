@@ -1,0 +1,25 @@
+{
+  "name": "Mapzen",
+  "version": "1.0.0",
+  "description": "Template Mapzen API Application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/whosonfirst/electron-mapzen-app",
+  "keywords": [
+    "mapzen",
+    "api"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "~1.6.2",
+    "electron-rebuild": "^1.5.7"
+  },
+  "dependencies": {
+    "electron-settings": "^3.0.14",
+    "jsonfile": "^3.0.0",
+    "shell": "^0.3.2"
+  }
+}
